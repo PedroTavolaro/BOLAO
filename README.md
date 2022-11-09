@@ -111,7 +111,12 @@ $ npm install
 #### - (Aplicatiov da web)
 #### - JavaScript URI = https://auth.expo.io
 > **⚠ Atenção !** <br> Importante, é necessário está logado com uma conta expo para 2ºopção (para logar ```$ npx expo login```) (para visualizar usuário ```$ npx expo whoami```.
-#### - Redirecionamento URI = <br />opção 1º => ( https://auth.expo.io/@your-username/your-project-slug ) - (your-name = nome da conta expo) + (slug = nome definido na criação do projeto) <br /> opção 2º => no arquivo AuthContext.tsx digite dentro da função AuthContextProvider                                       ``` console.log(AuthSession.makeRedirectUri({ useProxy: true }));``` copie o a mensagem / link no terminal e adicione na URL de redirecionamento. <br /> Criar 
+#### - Redirecionamento URI = 
+
+##### opção 1º => ( https://auth.expo.io/@your-username/your-project-slug ) - (your-name = nome da conta expo) + (slug = nome definido na criação do projeto) 
+
+##### opção 2º => no arquivo AuthContext.tsx digite dentro da função AuthContextProvider ``` console.log(AuthSession.makeRedirectUri({ useProxy: true }));```  copie o a mensagem / link no terminal e adicione na URL de redirecionamento. <br /> Criar 
+
 #### - Copiar ID do cliente e colocar na variável ambiente no arquivo NLW-COPA/mobile/.env
 
 ```bash 
