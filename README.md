@@ -5,6 +5,27 @@
   </a>
 </p>
 
+<h2 id="desc">
+💟 Sobre o projeto
+</h2>
+
+<p align="justify">
+A <b>NLW-COPA</b> é uma aplicação desenvolvida com intuito de conectar pessoas que desejam realizar bolões de jogos, podendo montar grupos, convidar pessoas e amigos para seus bolões ou entrar em bolões espécificos, através do código do bolão.
+<br/>
+
+</p>
+
+<h2 id="prototipagem">
+✈ Prototipagem
+</h2>
+
+<a href="https://www.figma.com/file/k3gfIJ4WKbiqHQOXrf9xds/Bol%C3%A3o-da-Copa">
+<img title="WebNLWCopa" src="./githubAssets/Web.png">
+</a>
+<h6 align="center">Clique na imagem para ver o projeto no figma</h6>
+
+<br>
+
 
 ## :hammer_and_wrench: Features 
 
@@ -13,7 +34,10 @@
 -   [x] `Listar` bolões;
 -   [x] `Buscar` bolão por código;
 -   [x] `Convidar` para bolão;
--   [x] `contagem` de pessoas no bolão;
+-   [x] `Contagem` de pessoas no bolão;
+-   [x] `Contagem` de bolões criados;
+-   [x] `Contagem` de palpites criados;
+-   [x] `Contagem` de pessoas utilizando o app;
 -   [x] `exibir avatar` das primeiras 4 pessoas do bolão ;
 -   [x] `Criar` palpite sobre os jogos do bolão;
 -   [x] `Validações de dados / funcionalidades`;
@@ -22,11 +46,17 @@
 -   [ ] `Ranking`;
 
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
-
+<h1> Esse projeto foi desenvolvido com as seguintes tecnologias: </h1>
 
 ## Back-end
+
+<p align="center">
+<img width="720em" height="680em" alt="server" title="#server" src="./githubAssets/table.png" />
+</p>
+
+<h3 id="tec">
+🛸 Tecnologias
+</h3>
 
 - [Node.js](https://nodejs.org/en/)
 - [Fastify](https://www.fastify.io/docs/latest/Guides/Getting-Started/)
@@ -55,8 +85,15 @@ $ npm run dev
 # O servidor inciará na porta:3333 - acesse <http://localhost:3333> 
 ```
 -------------------------------------------------------------------
+## Frontend
 
-🔭 Frontend
+<p align="center">
+<img alt="web" title="#web" src="./githubAssets/Web.png" />
+</p>
+
+<h3 id="tec">
+🛸 Tecnologias
+</h3>
 
 - [React](https://pt-br.reactjs.org/)
 - [NextJS](https://nextjs.org/)
@@ -65,6 +102,7 @@ $ npm run dev
 - [Axios](https://github.com/axios/axios)
 
 
+🔭 Rodando o Frontend (web)
 ```bash 
 
 # Acesse a pasta do projeto no terminal/cmd
@@ -77,8 +115,16 @@ $ npm install
 $ npm run dev
 # O servidor inciará na porta:3000 - acesse <http://localhost:3000> 
 ```
+## Mobile
 
-📱 Mobile
+
+<p align="center">
+<img alt="web" title="#web" src="./githubAssets/mobile/aplicacao-trilha-ignite.png" />
+</p>
+
+<h3 id="tec">
+🛸 Tecnologias
+</h3>
 
 - [Expo](https://expo.io/)
 - [React Native](https://reactnative.dev/)
@@ -92,6 +138,8 @@ $ npm run dev
 - [Country-List](https://www.npmjs.com/package/country-list)
 - [DayJS](https://www.npmjs.com/package/dayjs)
 - [dotENV](https://www.npmjs.com/package/dotenv)
+
+📱 Rodando o Mobile (mobile)
 
 ```bash 
 # Acesse a pasta do projeto no terminal/cmd
@@ -115,7 +163,7 @@ $ npm install
 
 ##### opção 1º => ( https://auth.expo.io/@your-username/your-project-slug ) - (your-name = nome da conta expo) + (slug = nome definido na criação do projeto) 
 
-##### opção 2º => no arquivo AuthContext.tsx digite dentro da função AuthContextProvider ``` console.log(AuthSession.makeRedirectUri({ useProxy: true }));```  copie o a mensagem / link no terminal e adicione na URL de redirecionamento. <br /> Criar 
+##### opção 2º => no arquivo AuthContext.tsx digite dentro da função AuthContextProvider ``` console.log(AuthSession.makeRedirectUri({ useProxy: true }));```  copie a mensagem / link no terminal e adicione na URL de redirecionamento. <br /> Criar 
 
 #### - Copiar ID do cliente e colocar na variável ambiente no arquivo NLW-COPA/mobile/.env
 
